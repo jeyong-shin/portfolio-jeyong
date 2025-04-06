@@ -35,7 +35,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                저는 이런 사람입니다
+                저는 이런 사람입니다!
               </h2>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 다년간의 개발 경험과 강의 경력을 바탕으로 복잡한 기술을 쉽게 설명하는 데 특화되어 있습니다.
