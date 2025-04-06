@@ -120,3 +120,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 컨테이너 가운데 정렬 스타일 */
+.container {
+  @apply mx-auto px-4 max-w-7xl;
+}
