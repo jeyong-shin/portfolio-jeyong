@@ -14,8 +14,7 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
         <div className="flex flex-col items-center md:items-start gap-4 md:w-1/3">
           <Avatar className="h-32 w-32">
-            <AvatarImage src="/avatar-placeholder.png" alt="신제용" />
-            <AvatarFallback>신제용</AvatarFallback>
+            <AvatarFallback className="text-4xl">신</AvatarFallback>
           </Avatar>
           <div className="text-center md:text-left">
             <h1 className="text-2xl font-bold">신제용</h1>

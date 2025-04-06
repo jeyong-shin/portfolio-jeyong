@@ -1,6 +1,5 @@
 "use client"
 
-import { type Metadata } from "next"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -12,7 +11,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -21,13 +19,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-
-// metadata cannot be used in client components, but we define it here for clarity
-// and will export it from a separate server component
-export const contactMetadata = {
-  title: "연락처 - 신제용 포트폴리오",
-  description: "신제용에게 연락하거나 메시지를 보내는 방법",
-}
 
 const formSchema = z.object({
   name: z.string().min(2, {
