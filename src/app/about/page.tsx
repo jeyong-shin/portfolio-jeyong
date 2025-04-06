@@ -1,6 +1,5 @@
 import { type Metadata } from "next"
 import { Separator } from "@/components/ui/separator"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata: Metadata = {
@@ -13,9 +12,13 @@ export default function AboutPage() {
     <div className="container py-8 md:py-12">
       <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-12">
         <div className="flex flex-col items-center md:items-start gap-4 md:w-1/3">
-          <Avatar className="h-32 w-32">
-            <AvatarFallback className="text-4xl">신</AvatarFallback>
-          </Avatar>
+          <div className="overflow-hidden rounded-full border-2 border-primary w-32 h-32">
+            <img 
+              src="/jeyong-shin.png"
+              alt="신제용 프로필 이미지"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="text-center md:text-left">
             <h1 className="text-2xl font-bold">신제용</h1>
             <p className="text-muted-foreground">강사 • 개발자 • AI 전문가</p>
@@ -38,7 +41,7 @@ export default function AboutPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>강의 및 컨설팅</CardTitle>
-                    <CardDescription>2020년 - 현재</CardDescription>
+                    <CardDescription>2019년 - 현재</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p>
@@ -50,7 +53,7 @@ export default function AboutPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>시니어 개발자</CardTitle>
-                    <CardDescription>2018년 - 2022년</CardDescription>
+                    <CardDescription>2024년 - 현재</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p>
@@ -61,11 +64,11 @@ export default function AboutPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>AI 연구원</CardTitle>
-                    <CardDescription>2016년 - 2018년</CardDescription>
+                    <CardDescription>2015년 - 2020년</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p>
-                      딥러닝 모델 연구 및 개발, 자연어 처리 분야 연구를 진행했습니다.
+                      영상처리와 컴퓨터 비전 분야에서 딥러닝 모델 연구 및 개발을 진행했습니다.
                     </p>
                   </CardContent>
                 </Card>
